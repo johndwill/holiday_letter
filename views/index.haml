@@ -1,8 +1,18 @@
-%h2
-	Welcome to YOUR Holiday Letter
+= haml :_head
+%body
+  .wrapper
+    .header        
+      %h2
+        Welcome to YOUR Holiday Letter
+    .content
+      %h2= "Just 2 quick questions"
+      %form{action: "generate", method: "POST"}
+        .input-field
+          %label= "Please enter your name"
+          %input{ name: "name", required: ""}
 
-%form{action: "generate", method: "POST"}
-	%label= "Please enter your name"
-	%input{ name: "name", required: ""}
-	%button{ type: "submit" }
-		Show me the letter
+        .input-field
+          %label Select your religious preference
+          = religion_selector()
+        %button{ type: "submit" }
+          Show me the letter

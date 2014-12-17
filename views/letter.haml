@@ -1,5 +1,12 @@
-%h2
-	="Merry Christmas #{@name}"
+= haml :_head
+%body
+  .wrapper
+    .header        
+      %h2
+        Welcome to YOUR Holiday Letter
+    .content
+      %h2
+        = greeting
 
-.cats
-	= cat_antics
+      .cats
+        = cat_antics
