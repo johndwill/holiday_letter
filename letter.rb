@@ -1,8 +1,10 @@
 require 'sinatra'
-require "sinatra/reloader" if development?
+if development?
+	require "sinatra/reloader" 
+	require 'pry'
+end
 require 'haml'
 require 'httpclient'
-require 'pry'
 require 'YAML'
 
 # #####################################################
