@@ -5,7 +5,7 @@ if development?
 end
 require 'haml'
 require 'httpclient'
-require 'YAML'
+require 'yaml'
 
 # #####################################################
 # Request handlers
