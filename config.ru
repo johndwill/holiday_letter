@@ -1,2 +1,2 @@
-require './nontom'
+require './letter'
 run Sinatra::Application
