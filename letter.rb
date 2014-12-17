@@ -17,7 +17,7 @@ end
 
 post '/generate' do
 	@name = params[:name]
-	@details = YAML.load_file("details.yaml")
+	@details = YAML.load_file(File.dirname(__FILE__) + "/details.yaml")
 	haml :letter
 end
 
