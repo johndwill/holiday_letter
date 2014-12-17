@@ -1,0 +1,8 @@
+%h2
+	Welcome to YOUR Holiday Letter
+
+%form{action: "generate", method: "POST"}
+	%label= "Please enter your name"
+	%input{ name: "name", required: ""}
+	%button{ type: "submit" }
+		Show me the letter
