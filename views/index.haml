@@ -1,18 +1,17 @@
 = haml :_head
-%body
+%body.pure-skin-holiday
   .wrapper
     .header        
-      %h2
-        Welcome to YOUR Holiday Letter
+      %h1
+        Welcome
     .content
       %h2= "Just 2 quick questions"
-      %form{action: "generate", method: "POST"}
-        .input-field
+      %form{action: "generate", method: "POST", class: "pure-form pure-form-stacked"}
+        %fieldset
           %label= "Please enter your name"
           %input{ name: "name", required: ""}
 
-        .input-field
           %label Select your religious preference
           = religion_selector()
-        %button{ type: "submit" }
+        %button{ type: "submit", class: "pure-button" }
           Show me the letter

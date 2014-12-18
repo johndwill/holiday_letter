@@ -27,7 +27,7 @@ end
 helpers do
 	def religion_selector
 
-		block = "<select name='religion'>"
+		block = "<select name='religion' class='pure-input-medium'>"
 		@details[:religion].each do |religion|
 			name = religion[:label]
 			block += "<option value='#{religion[:key]}'>#{religion[:label]}</option>"
@@ -47,12 +47,29 @@ helpers do
 	end
 
 	def cat_antics
+		pronouns = { m: [ "he", "his" ], f: [ "she", "her" ]}
+
 		stories = []
-		indices = (0..4).to_a.shuffle
-		@details[:cats].each_with_index do |cat, index|
-			antic = @details[:antics][indices[index]]
+		#cat_i = 
+		antics = @details[:antics].shuffle
+
+		@details[:cats].to_a.shuffle.each_with_index do |cat, j|
+			antic = antics[j]
+
+			# Insert the cat's name in the placeholder
 			antic = antic.gsub(/NAME/, cat[:name].capitalize)
-			stories << antic.gsub(/PRONOUN/, cat[:pronoun])
+
+			# Update the pronouns
+			pnouns = pronouns[cat[:sex].to_sym]
+
+			# Probably not the most efficient
+			antic = antic.gsub(/She/, pnouns[0].capitalize)
+			antic = antic.gsub(/she/, pnouns[0])
+			antic = antic.gsub(/Her/, pnouns[1].capitalize)
+			antic = antic.gsub(/her/, pnouns[1])
+
+			# append to our collection of crazy antics
+			stories << antic
 		end
 
 		"<p>"+stories.join("</p><p>")+"</p>"

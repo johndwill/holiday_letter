@@ -1,38 +1,41 @@
 :cats:
   - :name: hairy
-    :pronoun: he
+    :sex: m
   - :name: geri
-    :pronoun: she
+    :sex: f
   - :name: kaylee
-    :pronoun: she
+    :sex: f
   - :name: zoe
-    :pronoun: she
+    :sex: f
   - :name: fred
-    :pronoun: he
+    :sex: m
 
 :antics:
-  - NAME is building a rocket to the moon because PRONOUN heard it was made of cheese and cheese attracts mice and PRONOUN hasn't had a good mouse in forever.
-  - NAME has taken a hat down to the corner where PRONOUN sings the songs of PRONOUN people in the hopes to make a little spending money.
-  - NAME spends most of the day sleeping curled up in a ball. Occasionally, PRONOUN likes to turn over.
+  - NAME is building a rocket to the moon because she heard it was made of cheese and cheese attracts mice and she hasn't had a good mouse in forever.
+  - NAME has taken a hat down to the corner where she sings the songs of her people in the hopes of making a little spending money.
+  - NAME spends most of the day sleeping curled up in a ball. Occasionally, she likes to turn over.
   - NAME is seeking fame and fortune by entering online contests.
   - NAME is painting the door black.
-  - NAME lies awake at night pondering the futility of man. Except for feeding time. PRONOUN is pretty sure they're not futile at feeding time.
-  - NAME has checked into a rehab center for kitties with substance abuses.
-  - NAME has been knitting sweaters for the unfortunate kitties at the shelter that don't have a forever home. PRONOUN is such a caring kitty.
+  - NAME lies awake at night pondering the futility of man. Except for feeding time. She is pretty sure they're not futile at feeding time.
+  - NAME has checked into a rehab center for kitties with catnip addiction. We're hoping for a speedy recovery as the catnip in our garden is getting a bit overgrown.
+  - NAME has been knitting sweaters for the unfortunate kitties at the shelter that don't have a forever home. she is such a caring kitty.
+  - NAME is learning microsurgery in the hopes of grafting thumbs onto her paws so she can get open her food whenever she wants.
+  - NAME is continuing to color outside the lines.
+  - NAME is staring into the abyss. Sometimes she forgets and stares at the wall, but mostly it's the abyss.
 
 :religion:
   - :key: Christian
     :label: Christian
-    :greeting: Merry Christmas NAME
+    :greeting: Merry Christmas, NAME
   - :key: Jewish
     :label: Jewish
-    :greeting: Happy Hanukkah NAME
+    :greeting: Happy Hanukkah, NAME
   - :key: Pagan
     :label: Pagan
-    :greeting: Happy Yule NAME
+    :greeting: Happy Yule, NAME
   - :key: FSM
-    :label: Flying Speghetti Monster
-    :greeting: Argh, Yer Scurvy Dog
+    :label: Pastafarian
+    :greeting: Happy Ahoylidays, NAME
   - :key: None
     :label: None for me, thanks
-    :greeting: Happy Winter Solstice, NAME
+    :greeting: Hang in there! The days are going to get longer, NAME
