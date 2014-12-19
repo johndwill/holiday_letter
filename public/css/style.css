@@ -54,13 +54,8 @@ body {
 	width: 960px;
 }
 
-.leftcolumn {
-	float: left;
-	width: 300px;
-}
-
 .content {
-	margin: 0 20px 0 300px;
+	margin: 0 20px 0 30px;
 }
 
 .footer, #push {

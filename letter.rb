@@ -36,6 +36,11 @@ helpers do
 		block
 	end
 
+	def section(type)
+		"<p>"+@details[type.to_sym].to_a.shuffle.first+"</p>"
+	end
+
+
 	def greeting
 		@details[:religion].each do |religion|
 			if religion[:key] == @religion
@@ -63,10 +68,10 @@ helpers do
 			pnouns = pronouns[cat[:sex].to_sym]
 
 			# Probably not the most efficient
-			antic = antic.gsub(/She/, pnouns[0].capitalize)
-			antic = antic.gsub(/she/, pnouns[0])
-			antic = antic.gsub(/Her/, pnouns[1].capitalize)
-			antic = antic.gsub(/her/, pnouns[1])
+			antic = antic.gsub(/\bShe\b/, pnouns[0].capitalize)
+			antic = antic.gsub(/\bshe\b/, pnouns[0])
+			antic = antic.gsub(/\bHer\b/, pnouns[1].capitalize)
+			antic = antic.gsub(/\bher\b/, pnouns[1])
 
 			# append to our collection of crazy antics
 			stories << antic
