@@ -952,3 +952,8 @@ striping:
     left:0;
     width: 100%;
 }
+
+.signature {
+    font-family: 'Yellowtail', cursive;
+    font-size: 18pt;
+}
