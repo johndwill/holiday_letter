@@ -1,6 +1,8 @@
 # ruby-getting-started
 
-A barebones Rails app, which can easily be deployed to Heroku.
+A barebones Sinatra app, which can easily be deployed to Heroku.
+
+This does not use Rails.
 
 This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
 
@@ -13,10 +15,10 @@ $ git clone git@github.com:heroku/ruby-getting-started.git
 $ cd ruby-getting-started
 $ bundle install
 $ rake db:create db:migrate
-$ foreman start web
+$ ruby letter.rb
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Your app should now be running on [localhost:4567](http://localhost:4567/).
 
 ## Deploying to Heroku
 
